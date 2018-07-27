@@ -11,7 +11,8 @@ html {
 }
 
 body {
-
+  margin-top: 0;
+  max-width: 1100px;
 }
 
 /* HEADER */
@@ -21,39 +22,50 @@ header {
   background-color: cadetBlue;
   height: 3rem;
   position: fixed;
-  border-bottom: 1px solid #36454F;
-  border-top: 1px solid Silver;
+  border-bottom: 2px solid #36454F;
+  border-top: 2px solid #F5F5F5;
   width: 100%;
+  max-width: 1100px;
+}
+
+.logo_white {
+  height: 1.5rem;
 }
 
 .logo_white img {
   height: 1.5rem;
-  margin-left: 2rem;
-  width: auto;
+  margin-left: 1rem;
+  /* width: auto; */
 }
 
 .title {
   color: White;
   margin-left: 1rem;
   flex: none;
-  text-shadow: 1px 1px 0px #283744;
+  text-shadow: 2px 2px 0px #283744;
 }
 
 /* DROPDOWN MENU: */
 .dropdown {
     margin-left: auto;
+    height: 3.2rem;
+    width: 3.2rem;
 }
 
+/* Hamburger icon */
 .dropbtn {
-    margin-right: 1.5rem;
+    margin-right: auto;
+    margin-top: 0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: relative;
-    top: 5rem;
-    right: 2rem;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
     min-width: 110px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -64,7 +76,7 @@ header {
     color: #36454F;
     font-weight: bold;
     text-shadow: 1px 1px 0px lightGrey;
-    padding: 12px 16px;
+    padding: 11px 16px;
     text-decoration: none;
     display: block;
 }
@@ -76,8 +88,7 @@ header {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: Grey;} */
-
+.dropdown:hover .dropbtn {background-color: Grey;}
 
 
 /* HERO IMAGE */
@@ -95,15 +106,14 @@ header {
   width: 100%;
   height: 3rem;
   margin-top: 13rem;
-  background-color: White;
+  background-color: #F5F5F5;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #36454F;
-  border-top: 1px solid Silver;
+  border-bottom: 2px solid #36454F;
+  border-top: 2px solid White;
   text-shadow: 1px 1px 0px lightGrey;
 }
-
 
 /* SERVICES */
 
