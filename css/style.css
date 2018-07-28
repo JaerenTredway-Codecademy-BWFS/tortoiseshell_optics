@@ -134,7 +134,7 @@ header {
 .services figure {
   width: 12rem;
   height: auto;
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
     border: 1px solid blue;
 }
@@ -197,8 +197,25 @@ header {
 
 
 /* FOOTER */
+footer {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+    border: 1px solid red;
+}
 
+.logo_black { /* this wrapper allows the image size to be reduced and the iamge to be true center horizontaly */
+  height: 2rem;
+  width: 6rem;
+  border: 1px solid blue;
+  margin: 2rem;
+}
 
+.logo_black img {
+  height: 95%;
+  border: 1px solid green;
+}
 
 /* MEDIA QUERIES: */
 @media screen and (max-width:#px) {
