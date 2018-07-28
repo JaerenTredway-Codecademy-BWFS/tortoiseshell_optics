@@ -13,6 +13,7 @@ html {
 body {
   margin-top: 0;
   max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -35,14 +36,14 @@ header {
 .logo_white img {
   height: 1.5rem;
   margin-left: 1rem;
-  /* width: auto; */
+  filter: drop-shadow(1px 2px 0px #36454F);
 }
 
 .title {
   color: White;
   margin-left: 1rem;
   flex: none;
-  text-shadow: 2px 2px 0px #283744;
+  text-shadow: 1px 2px 0px #283744;
 }
 
 /* DROPDOWN MENU: */
@@ -58,6 +59,7 @@ header {
     margin-top: 0.75rem;
     height: 1.5rem;
     width: 1.5rem;
+    filter: drop-shadow(1px 2px 0px #36454F);
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -76,7 +78,7 @@ header {
     color: #36454F;
     font-weight: bold;
     text-shadow: 1px 1px 0px lightGrey;
-    padding: 11px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
 }
@@ -112,12 +114,58 @@ header {
   align-items: center;
   border-bottom: 2px solid #36454F;
   border-top: 2px solid White;
-  text-shadow: 1px 1px 0px lightGrey;
+  text-shadow: 2px 1px 0px cadetBlue;
+}
+
+.title_box span {
+  font-size: 1.35rem;
+  text-shadow: none;
 }
 
 /* SERVICES */
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+    border: 1px solid red;
+  flex-flow: row wrap;
+}
 
+.services figure {
+  width: 12rem;
+  height: auto;
+  margin: 2rem;
+  text-align: center;
+    border: 1px solid blue;
+}
 
+.image_wrapper {
+  width: 95%;
+  height: 9rem;
+  margin: 0.25rem;
+  text-align: center;
+    border: 1px solid purple;
+}
+
+.image_wrapper img {
+  max-width: 95%;
+  height: auto;
+  border: 1px solid green;
+}
+
+.services figcaption {
+    border: 1px solid purple;
+  margin: 0.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services h3 {
+  text-align: center;
+  flex: 0;
+  border: 1px solid green;
+
+}
 
 /* INFO */
 
