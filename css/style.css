@@ -31,6 +31,7 @@ header {
 
 .logo_white {
   height: 1.5rem;
+    border: 1px solid blue;
 }
 
 .logo_white img {
@@ -43,7 +44,16 @@ header {
   color: White;
   margin-left: 1rem;
   flex: none;
+  display: flex;
+  width: 10rem;
+  height: 2rem;
   text-shadow: 1px 2px 0px #283744;
+    border: 1px solid blue;
+}
+
+.title h4 {
+    border: 1px solid red;
+    margin: auto;
 }
 
 /* DROPDOWN MENU: */
@@ -51,6 +61,7 @@ header {
     margin-left: auto;
     height: 3.2rem;
     width: 3.2rem;
+      /* border: 1px solid blue; */
 }
 
 /* Hamburger icon */
@@ -78,7 +89,7 @@ header {
     color: #36454F;
     font-weight: bold;
     text-shadow: 1px 1px 0px lightGrey;
-    padding: 10px 16px;
+    padding: 7px 16px;
     text-decoration: none;
     display: block;
     border-bottom: 2px solid #36454F;
@@ -210,7 +221,7 @@ footer {
 .logo_black { /* this wrapper allows the image size to be reduced and the iamge to be true center horizontaly */
   height: 2rem;
   width: 6rem;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 2rem;
 }
 
@@ -220,8 +231,74 @@ footer {
 }
 
 /* MEDIA QUERIES: */
-@media screen and (max-width:#px) {
-    selector {
-        property: value;
-    }
+@media screen and (min-width:700px) {
+  /* this changes the dropdown menu to a regular navbar for larger screens: */
+  .dropdown {
+      margin-left: auto;
+      height: 3.2rem;
+      /* width: 3.2rem; */
+      display: flex;
+      align-items: center;
+        width: 350px;
+        margin-right: 1rem;
+        border: 1px solid blue;
+  }
+
+  /* Hamburger icon */
+  .dropbtn {
+      /* margin-right: auto; */
+      /* margin-top: 0.75rem; */
+      /* height: 1.5rem; */
+      /* width: 1.5rem; */
+      /* filter: drop-shadow(1px 2px 0px #36454F); */
+      display: none;
+      margin: 0;
+      filter: none;
+        border: 1px solid yellow;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      /* display: none; */
+      /* position: absolute; */
+      /* top: 3rem; */
+      /* right: 1rem; */
+      /* min-width: 110px; */
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      /* z-index: 1; */
+      display: flex;
+      position: inherit;
+      top: 0.75rem;
+      right: 0;
+      min-width: 350px;
+      box-shadow: none;
+      z-index: 2;
+        border: 1px solid red;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      /* color: #36454F; */
+      font-weight: bold;
+      text-shadow: 1px 1px 0px #36454F;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: flex;
+      /* border-bottom: 2px solid #36454F; */
+      /* border-top: 2px solid #F5F5F5; */
+      color: White;
+      padding: 0;
+      margin: 0 1rem;
+        border: 1px solid green;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: inherit;}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: inherit;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: Grey;}
+
 }
